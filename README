@@ -1,0 +1,19 @@
+This is an artificial intelligence class <Player> which can play a game depending of it __str__ and it callback to play
+
+Main  Player has
+- name
+- play function which is executed when an game need it
+- knownGameSTR : is a dict of all strGame instance
+- knownGameSTRCBs: is a dict with all games callbacks by they __str__ prop, key = __str__ and value = callback
+- registerGameWithCB: this register a game with it callback
+
+\notes:
+steps:
+create a player :
+ - __str__ = main players class
+ - name
+ - knownGameSTR
+ - knownGameSTRCBs
+ - registerGameWithCallBack
+
+ create a callback an register it to the player list
