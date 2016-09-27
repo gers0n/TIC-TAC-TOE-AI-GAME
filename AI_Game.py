@@ -49,9 +49,9 @@ class HumanPlayer(Player):
 os.system("cls")
 
 
-Me = HumanPlayer("Fhillip") #Player 1
+Me = HumanPlayer("Player") #Player 1
 AIP = AIPlayer("AI Machine") #Player 2
-g = Game()
+TTTGame = Game() #Tic Tac Toe Game instance
 
 Me.registerGameWithCB(g, Me._play );
 
@@ -59,14 +59,14 @@ AIP.registerGameWithCB(g, AIP.autoPlayTTT )
 
 # raw_input()
 
-g.addPlayer(Me)
-g.addPlayer(AIP)
+TTTGame.addPlayer(Me)
+TTTGame.addPlayer(AIP)
 
 # AIP._game = g
 
 # print "player list"
-# pprint(g.     )
+# pprint(TTTGame.     )
 print "\n=================="
-print "Starting"
-g.start()
+print "Starting..."
+TTTGame.start()
 # raw_input()
